@@ -1,0 +1,266 @@
+*{
+	margin:0;
+	padding:0;
+	-webkit-tap-highlight-color:transparent;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+body{
+	font-size: 15px;
+	font-family: "微软雅黑";
+	color: #333;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	text-decoration: none;
+}
+input{
+	border:none; 
+	outline: none;
+	-webkit-appearance:none;
+}
+ul,ol{
+	list-style:none;
+}
+.jd_container{
+	width: 100%;
+	max-width: 640px;
+	min-height: 320px;
+	margin: 0 auto;
+	background-color:rgb(252,244,253);
+}
+
+.jd_container>.jd_header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 44px;
+	width: 100%;
+	z-index: 1000;
+}
+.jd_container>.jd_header>.jd_header_box{
+	background-color: rgba(199,21,23,1);
+	height: 100%;
+	width: 100%;
+	max-width: 640px;
+	min-width: 320px;
+	margin:0 auto;
+	display: flex;
+	align-items: center;
+}
+.jd_container>.jd_header>.jd_header_box>.jd_logo{
+	width: 60px;
+	height: 25px;
+	background-image: url(../images/logo.jpg);
+	background-size: 60px 25px;
+	margin:0 5px; 
+}
+.jd_header_box>form{
+	flex:1;
+	position: relative;
+}
+.jd_header_box>form>.jd_search{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	background-image: url(../images/search.png);
+	background-size: 20px 20px;
+	left: 5px;
+	top: 5px;
+}
+/*搜索框*/
+.jd_header_box>form>input{
+	width: 95%;
+	height: 30px;
+	border-radius: 15px;
+	padding-left: 25px;
+}
+/*登录*/
+.jd_header_box>form>.jd-login{
+	width: 50px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	color: white;
+	font-size: 15px;
+}
+.swiper-wrapper{
+	position: relative;
+}
+.jd_slideshow{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+/*小点点*/
+.jd_slideshow .spot{
+	width: 200px;
+	height: 10px;
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	margin-left: -100px;
+	/*overflow: hidden;*/
+	z-index: 10;
+}
+.spot>li{
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	border:1px solid red;
+	float: left;
+	margin-left: 15px;
+}
+/*nav*/
+.jd_nav{
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid #e0e0e0;
+	background-color: white;
+}
+.jd_nav>.jd_one,.jd_nav>.jd_two{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.jd_nav>.jd_one>div,.jd_nav>.jd_two>div{
+	width: 60px;
+	height: 80px;
+}
+.jd_nav>.jd_one>div>img,.jd_nav>.jd_two>div>img{
+	width: 100%;
+	display: block;
+}
+.jd_nav>.jd_one>div>p,.jd_nav>.jd_two>div>p{
+	text-align:center;
+	color: #333;
+}
+
+/*秒杀盒子*/
+.jd_main{
+	padding: 0 5px;
+}
+.jd_main>.jd_section{
+	width: 100%;
+	background-color: white;
+	margin-top: 10px;
+	min-height: 50px;
+	box-shadow: 0 0 1px #e0e0e0;
+}
+.jd_main>.jd_section>.jd_section_head{
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 0 5px;
+}
+.jd_main>.jd_section>.jd_section_head_noborder{
+	border-bottom: none;
+}
+.jd_section_left{
+	float: left;
+}
+.icon_clock{
+	width: 30px;
+	height: 30px;
+	margin-left: 20px;
+	margin-top: 7px;
+	float: left;
+}
+.jd_hand{
+	margin-left: 10px;
+	color: rgba(199,21,33,1);
+	font-size: 18px;
+	float: left;
+	margin-top: 7px;
+}
+.jd_more{
+	float: right;
+	margin-top: 7px;
+}
+.jd_time{
+	float: left;
+	margin-left: 5px;
+	margin-top: 8px;
+}
+.jd_time>span{
+	float: left;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	line-height: 15px;
+	background-color: #333;
+	color: white;
+	margin-left: 5px;
+	margin-top: 7px;
+}
+.jd_time>.colon{
+	background-color: white;
+	color: black;
+	width: 5px;
+}
+.jd_goods>ul{
+	width: 100%;
+	overflow: hidden;
+}
+.jd_goods>ul>li{
+	float: left;
+	width: 33.33%;
+}
+.jd_goods>ul>li>a{
+	display: block;
+	width: 100%;
+	border-right: 1px solid #c0c0c0;
+}
+.jd_goods>ul>li:last-child>a{
+	border-right:none;
+}
+.jd_goods>ul>li>a>img{
+	width: 80%;
+	display: block;
+	margin:0 auto;
+}
+.jd_goods>ul>li>p{
+	margin-top: 5px;
+	color: rgba(199,21,33,1);
+	text-align: center;
+}
+.jd_goods>ul>li>p:last-child{
+	color: #666;
+	text-align: center;
+	text-decoration: line-through;/*删除线*/
+}
+
+/*设置图片*/
+.w_50{
+	width: 50%;
+	display: block;
+}
+.w_50>img{
+	width: 100%;
+	display:block;
+}
+/*左右浮动*/
+.f_left{
+	float: left;
+}
+.f_right{
+	float: right;
+}
+/*左右下线*/
+.b_left{
+	border-left:1px solid #c0c0c0;
+}
+.b_right{
+	border-right: 1px solid #c0c0c0;
+}
+.b_bottom{
+	border-bottom: 1px solid #c0c0c0;
+}
+/*清除浮动*/
+.clear_f{
+	overflow: hidden;
+}
